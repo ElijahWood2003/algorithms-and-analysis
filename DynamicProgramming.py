@@ -72,7 +72,7 @@ def fKnapsack(v, w, B):
 # print(fKnapsack(v, w, B))
 
 # Stack block
-def stack_block(R, B, n):
+def stack_block(R, B, n) -> list:
     # Indexing d starting at 0
     d = (n + 1) * [1]
     L = max(R, B)
@@ -95,6 +95,8 @@ def stack_block(R, B, n):
             d[i] = 1
 
     return d[n]
+
+print(stack_block([6, 9, 5, 9], [8, 6, 1, 3], 4))
 
 
 # Bellman-Ford
